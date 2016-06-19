@@ -173,6 +173,22 @@ export default class Presentation extends React.Component {
             </List>
             </Slide>
 
+            <Slide transition={["fade"]} bgColor="#222222">
+            <CodePane
+        lang="clojure"
+        source={require("raw!../assets/ex.j")}
+        margin="20px auto"
+            />
+            </Slide>
+
+            <Slide transition={["fade"]} bgColor="#222222">
+            <CodePane
+        lang="clojure"
+        source={require("raw!../assets/ex.cljs")}
+        margin="20px auto"
+            />
+            </Slide>
+
             <Slide transition={["fade"]} bgImage={images.demo.replace("/", "")} bgDarken={0.75}>
             <Heading caps fit size={1} textColor="white">
             Native Modules
