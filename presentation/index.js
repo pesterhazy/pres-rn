@@ -42,6 +42,7 @@ const images = {
   , react: require("../assets/React.png")
   , hand: require("../assets/hand.jpg")
   , demo: require("../assets/demo.jpg")
+  , bugs: require("../assets/bugs.png")
 };
 
 preloader(images);
@@ -206,6 +207,36 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>started with iOS only, Android support was introduced in September</ListItem></Appear>
             <Appear><ListItem>breakneck speed: biweekly releases, now at 0.27.2</ListItem></Appear>
             <Appear><ListItem>ecosystem of React Native npm modules (follow @RNParts)</ListItem></Appear>
+            </List>
+            </Slide>
+
+            <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            It works well...
+            </Text>
+            <List textColor="white">
+            <Appear><ListItem>Based on sound concepts and solid engineering</ListItem></Appear>
+            <Appear><ListItem>Surprisingly good performance (on recent phones)</ListItem></Appear>
+            <Appear><ListItem>Fast iterative development</ListItem></Appear>
+            </List>
+            </Slide>
+
+            <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            ... until it doesn't (tooling)
+            </Text>
+            <List textColor="white">
+            <Appear><ListItem>instead of using established tools like browserify or webpack, the RN team built its own javascript bundler: "react-native packager"</ListItem></Appear>
+            <Appear><ListItem>react-native packager has hardly any documentation</ListItem></Appear>
+            <Appear><ListItem>off the main path? Use the source</ListItem></Appear>
+            </List>
+            </Slide>
+
+            <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
+            <Image src={images.bugs.replace("/", "")} margin="0px auto 20px" height="400px"/>
+            <List textColor="white">
+            <Appear><ListItem>Bug tracker is overwhelmed by huge demand</ListItem></Appear>
+            <Appear><ListItem>Some components are driven by Facebook's own needs (e.g. ListView)</ListItem></Appear>
             </List>
             </Slide>
 
