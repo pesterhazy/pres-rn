@@ -141,7 +141,7 @@ export default class Presentation extends React.Component {
             How
         </Heading>
             <Heading size={1} fit caps>
-            does it work
+            does it work?
         </Heading>
             </Slide>
             <Slide transition={["zoom"]} bgColor="primary">
@@ -168,6 +168,19 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>styles supporting a subset of CSS (margins, colors)</ListItem></Appear>
             <Appear><ListItem>inline styles everywhere, no .css files</ListItem></Appear>
             <Appear><ListItem>FlexBox layout everywhere</ListItem></Appear>
+            </List>
+            </Slide>
+
+            <Slide transition={["fade"]} bgImage={images.demo.replace("/", "")} bgDarken={0.75}>
+            <Heading caps fit size={1} textColor="white">
+            Native Modules
+            </Heading>
+            <List textColor="white">
+            <Appear><ListItem>basic components are included</ListItem></Appear>
+            <Appear><ListItem>TextInput, Image, TouchableHighlight, ListView, Animation</ListItem></Appear>
+            <Appear><ListItem>Native Modules allow you to extend React Native</ListItem></Appear>
+            <Appear><ListItem>written in the platform's native language and expose an API to JavaScript</ListItem></Appear>
+            <Appear><ListItem>interacting with the system and using third-party frameworks (payment processor, Facebook login)</ListItem></Appear>
             </List>
             </Slide>
 
