@@ -201,7 +201,11 @@ export default class Presentation extends React.Component {
             React Native's ecosystem
             </Text>
             <List textColor="white">
-            <Appear><ListItem>one of the fastest growing projects of the last year</ListItem></Appear>
+            <Appear><ListItem>RN is one of the fastest growing projects of the last year</ListItem></Appear>
+            <Appear><ListItem>1st public release March 2015</ListItem></Appear>
+            <Appear><ListItem>started with iOS only, Android support was introduced in September</ListItem></Appear>
+            <Appear><ListItem>breakneck speed: biweekly releases, now at 0.27.2</ListItem></Appear>
+            <Appear><ListItem>ecosystem of React Native npm modules (follow @RNParts)</ListItem></Appear>
             </List>
             </Slide>
 
