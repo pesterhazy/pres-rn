@@ -38,6 +38,9 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   phone1: require("../assets/Phone Screenshot 1.jpg")
+  , fy: require("../assets/fy.png")
+  , react: require("../assets/React.png")
+  , hand: require("../assets/hand.jpg")
 };
 
 preloader(images);
@@ -65,11 +68,23 @@ export default class Presentation extends React.Component {
             React Berlin Jun 20, 2016
 </Text>
           </Slide>
+          <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")}>
+          </Slide>
 
-          <Slide transition={["zoom"]} bgColor="primary">
-            <Image src={images.phone1.replace("/", "")} margin="0px auto 40px" height="293px"/>
-            <Heading size={1} fit lineHeight={1} textColor="black">
-            React Native, used in anger
+          <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
+            <Image src={images.fy.replace("/", "")} margin="0px auto 40px" height="100px"/>
+            <List textColor="white">
+              <Appear><ListItem>Early adapters of React Native</ListItem></Appear>
+              <Appear><ListItem>iOS app in the App Store since February</ListItem></Appear>
+              <Appear><ListItem>Android version coming soon</ListItem></Appear>
+              <Appear><ListItem>Tech stack: Clojure (backend) and ClojureScript (frontend)</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={["fade"]} bgColor="#222222">
+            <Image src={images.react.replace("/", "")} margin="0px auto 40px" height="100px"/>
+            <Heading size={1} fit lineHeight={1} textColor="white">
+            What is React Native?
             </Heading>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
