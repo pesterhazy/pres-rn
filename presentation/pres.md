@@ -1,3 +1,6 @@
+- todo: add example code for views (in JSX, in hiccup)
+
+
 - who am I?
     - Head of Engineering for Fy
     - E-commerce marketplace for accessories

@@ -184,6 +184,26 @@ export default class Presentation extends React.Component {
             </List>
             </Slide>
 
+            <Slide transition={["fade"]} bgImage={images.demo.replace("/", "")} bgDarken={0.75}>
+            <Heading caps fit size={1} textColor="white">
+            Async programming
+            </Heading>
+            <List textColor="white">
+            <Appear><ListItem>As a native developer, you need to get used to the "async everywhere" approach</ListItem></Appear>
+            <Appear><ListItem>Communication between native and JavaScript code is clunky</ListItem></Appear>
+            <Appear><ListItem>Native Module cannot return values, they can only trigger a callback</ListItem></Appear>
+            </List>
+            </Slide>
+
+            <Slide transition={["fade"]} bgColor="#222222">
+            <Image src={images.react.replace("/", "")} margin="0px auto 20px" height="100px"/>
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            React Native's ecosystem
+            </Text>
+            <List textColor="white">
+            <Appear><ListItem>one of the fastest growing projects of the last year</ListItem></Appear>
+            </List>
+            </Slide>
 
           <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
             <Image src={images.fy.replace("/", "")} margin="0px auto 40px" height="100px"/>
