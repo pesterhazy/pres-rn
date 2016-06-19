@@ -136,6 +136,40 @@ export default class Presentation extends React.Component {
             <Appear><ListItem>Potential non-UI code reuse between web and app</ListItem></Appear>
             </List>
             </Slide>
+            <Slide transition={["zoom"]} bgColor="primary">
+            <Heading size={1} fit caps lineHeight={1} textColor="black">
+            How
+        </Heading>
+            <Heading size={1} fit caps>
+            does it work
+        </Heading>
+            </Slide>
+            <Slide transition={["zoom"]} bgColor="primary">
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            How does it work?
+        </Text>
+            <List textColor="white">
+            <Appear><ListItem>two threads: main thread (UI thread) and app thread (JavaScript)</ListItem></Appear>
+            <Appear><ListItem>main thread draws the UI</ListItem></Appear>
+            <Appear><ListItem>app thread runs your JavaScript code</ListItem></Appear>
+            <Appear><ListItem>they talk to each other only through events</ListItem></Appear>
+            <Appear><ListItem>RCTBridge</ListItem></Appear>
+            </List>
+            </Slide>
+
+            <Slide transition={["zoom"]} bgColor="primary">
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            Building a UI
+            </Text>
+            <List textColor="white">
+            <Appear><ListItem>div == View</ListItem></Appear>
+            <Appear><ListItem>span == Text (roughly)</ListItem></Appear>
+            <Appear><ListItem>img == Image</ListItem></Appear>
+            <Appear><ListItem>styles supporting a subset of CSS (margins, colors)</ListItem></Appear>
+            <Appear><ListItem>inline styles everywhere, no .css files</ListItem></Appear>
+            <Appear><ListItem>FlexBox layout everywhere</ListItem></Appear>
+            </List>
+            </Slide>
 
 
           <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
