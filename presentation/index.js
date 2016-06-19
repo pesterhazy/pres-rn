@@ -43,6 +43,7 @@ const images = {
   , hand: require("../assets/hand.jpg")
   , demo: require("../assets/demo.jpg")
   , bugs: require("../assets/bugs.png")
+    , red: require("../assets/red.png")
 };
 
 preloader(images);
@@ -190,7 +191,7 @@ export default class Presentation extends React.Component {
             Async programming
             </Heading>
             <List textColor="white">
-            <Appear><ListItem>As a native developer, you need to get used to the "async everywhere" approach</ListItem></Appear>
+            <Appear><ListItem>As an iOS developer, you need to get used to the "async everywhere" approach</ListItem></Appear>
             <Appear><ListItem>Communication between native and JavaScript code is clunky</ListItem></Appear>
             <Appear><ListItem>Native Module cannot return values, they can only trigger a callback</ListItem></Appear>
             </List>
@@ -235,8 +236,8 @@ export default class Presentation extends React.Component {
             <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
             <Image src={images.bugs.replace("/", "")} margin="0px auto 20px" height="400px"/>
             <List textColor="white">
-            <Appear><ListItem>Bug tracker is overwhelmed by huge demand</ListItem></Appear>
-            <Appear><ListItem>Some components are driven by Facebook's own needs (e.g. ListView)</ListItem></Appear>
+            <Appear><ListItem>Bug tracker is flooded with issues</ListItem></Appear>
+            <Appear><ListItem>Component progress driven by Facebook's timeline (e.g. ListView)</ListItem></Appear>
             </List>
             </Slide>
 
