@@ -41,6 +41,7 @@ const images = {
   , fy: require("../assets/fy.png")
   , react: require("../assets/React.png")
   , hand: require("../assets/hand.jpg")
+  , demo: require("../assets/demo.jpg")
 };
 
 preloader(images);
@@ -84,18 +85,31 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
+            <Slide transition={["fade"]} bgImage={images.demo.replace("/", "")}>
+            <Text textColor="black" textSize="3em" margin="20px 0px 0px" bold>
+            Demo
+        </Text>
+            </Slide>
+
           <Slide transition={["fade"]} bgColor="#222222">
             <Image src={images.react.replace("/", "")} margin="0px auto 40px" height="100px"/>
             <Heading size={1} fit lineHeight={1} textColor="white">
             What is React Native?
             </Heading>
           </Slide>
-          <Slide transition={["zoom"]} bgColor="primary">
-            <Image src={images.phone1.replace("/", "")} margin="0px auto 40px" height="293px"/>
-            <Heading size={1} fit caps lineHeight={1} textColor="black">
-            React Naitve, used in anger
-            </Heading>
-          </Slide>
+
+            <Slide transition={["fade"]} bgColor="#222222">
+            <Image src={images.react.replace("/", "")} margin="0px auto 40px" height="100px"/>
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            React Native
+        </Text>
+              <CodePane
+              lang="javascript"
+              source={require("raw!../assets/example.js")}
+              margin="20px auto"
+            />
+            </Slide>
+
 
           <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
             <Image src={images.fy.replace("/", "")} margin="0px auto 40px" height="100px"/>
