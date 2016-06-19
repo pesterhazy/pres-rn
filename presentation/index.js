@@ -73,6 +73,9 @@ export default class Presentation extends React.Component {
 
           <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
             <Image src={images.fy.replace("/", "")} margin="0px auto 40px" height="100px"/>
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            Fy
+            </Text>
             <List textColor="white">
               <Appear><ListItem>Early adapters of React Native</ListItem></Appear>
               <Appear><ListItem>iOS app in the App Store since February</ListItem></Appear>
@@ -93,6 +96,19 @@ export default class Presentation extends React.Component {
             React Naitve, used in anger
             </Heading>
           </Slide>
+
+          <Slide transition={["fade"]} bgImage={images.hand.replace("/", "")} bgDarken={0.75}>
+            <Image src={images.fy.replace("/", "")} margin="0px auto 40px" height="100px"/>
+            <Text textColor="white" textSize="1.5em" margin="20px 0px 0px" bold>
+            Thanks for listening!
+        </Text>
+            <List textColor="white">
+            <ListItem>https://www.iamfy.co</ListItem>
+            <ListItem>@pesterhazy</ListItem>
+            <ListItem>paulus@iamfy.co</ListItem>
+            <ListItem>We're hiring!</ListItem>
+            </List>
+            </Slide>
         </Deck>
       </Spectacle>
     );
